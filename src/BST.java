@@ -8,4 +8,16 @@ public class BST<K extends Comparable<K>, V> {
             this.value = value;
         }
     }
+    private Node root;
+    private int size;
+
+    public void put(K key, V value){
+        root = putRec(root, key, value);
+    }
+    private Node putRec(Node current, K key, V value){
+        if(current == null) {
+            size++;
+            return new Node(key, value);
+        }
+    }
 }

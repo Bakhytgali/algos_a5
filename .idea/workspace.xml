@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ded3f78-3d47-4157-be6d-a5cee0eb8e7d" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/src/BST.java" afterDir="false" />
+    <list default="true" id="4ded3f78-3d47-4157-be6d-a5cee0eb8e7d" name="Changes" comment="Creating BST class and inner-class &quot;Node&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BST.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,11 +54,19 @@
       <option name="project" value="LOCAL" />
       <updated>1684289385992</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Creating BST class and inner-class &quot;Node&quot;">
+      <created>1684289642303</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1684289642303</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="Creating BST class and inner-class &quot;Node&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating BST class and inner-class &quot;Node&quot;" />
   </component>
 </project>
