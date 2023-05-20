@@ -49,4 +49,11 @@ public class BST<K extends Comparable<K>, V> {
             }
         }
     }
+    public Node lessValue(Node current){
+        if(current.left == null){
+            return current;
+        } else {
+            return lessValue(current.left);
+        }
+    }
 }
