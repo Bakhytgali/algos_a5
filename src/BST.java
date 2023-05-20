@@ -46,8 +46,14 @@ public class BST<K extends Comparable<K>, V> {
                 deleteRec(current.left, key);
             } else if(current.left == null){
                 deleteRec(current.right, key);
+            } else {
+                Node lessValue = lessValue(current.right);
+                current.key = lessValue.key;
+                current.value = lessValue.value;
+                current.right = deleteRec(current.right, lessValue.key);
             }
         }
+        return current;
     }
     public Node lessValue(Node current){
         if(current.left == null){
