@@ -32,7 +32,11 @@ public class BST<K extends Comparable<K>, V> {
     public int getSize() {
         return size;
     }
-    private Node deleteRec(){
-
+    private Node deleteRec(Node current, K key){
+        if(current == null){
+            return null;
+        } else if(current.key.compareTo(key) > 0){
+            current.right = deleteRec(current.right, key);
+        }
     }
 }
