@@ -25,6 +25,9 @@ public class BST<K extends Comparable<K>, V> {
             current.right = putRec(current.right, key, value);
         } else if(current.key.compareTo(key) < 0) {
             current.left = putRec(current.left, key, value);
+        } else if(current.key.compareTo(key) == 0) {
+            current.value = value;
         }
+        return current;
     }
 }
