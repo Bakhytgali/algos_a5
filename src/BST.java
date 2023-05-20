@@ -13,7 +13,6 @@ public class BST<K extends Comparable<K>, V> {
     public BST(){
         root = null;
     }
-
     public void put(K key, V value){
         root = putRec(root, key, value);
     }
@@ -29,5 +28,8 @@ public class BST<K extends Comparable<K>, V> {
             current.value = value;
         }
         return current;
+    }
+    public int getSize() {
+        return size;
     }
 }
