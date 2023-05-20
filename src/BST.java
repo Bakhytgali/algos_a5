@@ -32,4 +32,7 @@ public class BST<K extends Comparable<K>, V> {
     public int getSize() {
         return size;
     }
+    private Node deleteRec(){
+
+    }
 }
