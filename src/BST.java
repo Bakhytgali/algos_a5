@@ -10,6 +10,9 @@ public class BST<K extends Comparable<K>, V> {
     }
     private Node root;
     private int size;
+    public BST(){
+        root = null;
+    }
 
     public void put(K key, V value){
         root = putRec(root, key, value);
@@ -18,6 +21,8 @@ public class BST<K extends Comparable<K>, V> {
         if(current == null) {
             size++;
             return new Node(key, value);
+        } else if(current.key.compareTo(key) > 0) {
+            current.right = putRec(current.right, key, value);
         }
     }
 }
