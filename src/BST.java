@@ -37,6 +37,16 @@ public class BST<K extends Comparable<K>, V> {
             return null;
         } else if(current.key.compareTo(key) > 0){
             current.right = deleteRec(current.right, key);
+        } else if(current.key.compareTo(key) < 0) {
+            current.left = deleteRec(current.left, key);
+        } else {
+            if(current.right == null && current.left == null){
+                return null;
+            } else if(current.right == null) {
+                deleteRec(current.left, key);
+            } else if(current.left == null){
+                deleteRec(current.right, key);
+            }
         }
     }
 }
