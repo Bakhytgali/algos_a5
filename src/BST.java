@@ -69,7 +69,12 @@ public class BST<K extends Comparable<K>, V> {
         return null;
     }
     public V get(K key) {
-        root = getRec(root, key);
+        Node res = getRec(root, key);
+        if(res == null){
+            return null;
+        } else {
+            return res.value;
+        }
     }
     private Node getRec(Node current, K key){
         if(current == null) {
@@ -79,5 +84,6 @@ public class BST<K extends Comparable<K>, V> {
         } else if(current.key.compareTo(key) < 0) {
             current.left = getRec(current.left, key);
         }
+        return current;
     }
 }
