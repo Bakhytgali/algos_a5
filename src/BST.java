@@ -76,6 +76,8 @@ public class BST<K extends Comparable<K>, V> {
             return null;
         } else if (current.key.compareTo(key) > 0) {
             current.right = getRec(current.right, key);
+        } else if(current.key.compareTo(key) < 0) {
+            current.left = getRec(current.left, key);
         }
     }
 }
