@@ -71,4 +71,9 @@ public class BST<K extends Comparable<K>, V> {
     public V get(K key) {
         root = getRec(root, key);
     }
+    private Node getRec(Node current, K key){
+        if(current == null){
+            return null;
+        }
+    }
 }
