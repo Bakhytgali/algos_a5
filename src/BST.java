@@ -55,6 +55,9 @@ public class BST<K extends Comparable<K>, V> {
         }
         return current;
     }
+    public void delete(K key){
+        root = deleteRec(root, key);
+    }
     public Node lessValue(Node current){
         if(current.left == null){
             return current;
@@ -64,5 +67,8 @@ public class BST<K extends Comparable<K>, V> {
     }
     public Iterable<K> iterator(){
         return null;
+    }
+    public V get(K key) {
+        root = getRec(root, key);
     }
 }
