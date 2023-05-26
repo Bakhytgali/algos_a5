@@ -96,20 +96,25 @@ public class BST<K extends Comparable<K>, V> {
     public void inOrder(){
         inOrder(root);
     }
-    private boolean contains(Node current, K key, V value){
-        if(current == null) {
+    private boolean contains(Node current, K key, V value){ // Getting every root as current
+                                                            // Key and value of elements that I'm checking
+        if(current == null) { // If current node is null, the element can not be in bst
             return false;
-        } else if(current.key.compareTo(key) > 0) {
+        } else if(current.key.compareTo(key) > 0) { // if the key of the element is greater than
+                                                    // current node's key, it goes to the right
             return contains(current.right, key, value);
-        } else if(current.key.compareTo(key) < 0) {
+        } else if(current.key.compareTo(key) < 0) { // if the key of the element if less than
+                                                    // current node's key, than it goes to the left
             return contains(current.left, key, value);
-        } else if(current.key == key && current.value == value) {
+        } else if(current.key == key && current.value == value) { // if current node has the same key and value
+                                                                    // then check is completed with true result
             return true;
-        } else {
+        } else { // every other option ends with the false result
             return false;
         }
     }
-    public boolean contains(K key, V value){
-        return contains(root, key, value);
+    public boolean contains(K key, V value){ // Getting key and value to check if bst contains the element
+        return contains(root, key, value); // first node is root, so I'm returning it to my
+                                            // recursive function with the value and key that I got
     }
 }
