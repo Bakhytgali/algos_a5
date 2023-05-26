@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ded3f78-3d47-4157-be6d-a5cee0eb8e7d" name="Changes" comment="testing for put function">
+    <list default="true" id="4ded3f78-3d47-4157-be6d-a5cee0eb8e7d" name="Changes" comment="Testings for getSize(), get() and delete() functions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BST.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -181,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684684103085</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Testings for getSize(), get() and delete() functions">
+      <created>1684684248042</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1684684248042</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -216,6 +224,7 @@
     <MESSAGE value="3rd if statement where current key is less" />
     <MESSAGE value="fixing public get() function" />
     <MESSAGE value="testing for put function" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing for put function" />
+    <MESSAGE value="Testings for getSize(), get() and delete() functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Testings for getSize(), get() and delete() functions" />
   </component>
 </project>

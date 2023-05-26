@@ -86,4 +86,30 @@ public class BST<K extends Comparable<K>, V> {
         }
         return current;
     }
+    private void inOrder(Node node){
+        if(node !=null){
+            inOrder(node.left);
+            System.out.print(node.value + " ");
+            inOrder(node.right);
+        }
+    }
+    public void inOrder(){
+        inOrder(root);
+    }
+    private boolean contains(Node current, K key, V value){
+        if(current == null) {
+            return false;
+        } else if(current.key.compareTo(key) > 0) {
+            return contains(current.right, key, value);
+        } else if(current.key.compareTo(key) < 0) {
+            return contains(current.left, key, value);
+        } else if(current.key == key && current.value == value) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    public boolean contains(K key, V value){
+        return contains(root, key, value);
+    }
 }
